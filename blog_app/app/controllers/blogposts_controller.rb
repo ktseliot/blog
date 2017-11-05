@@ -37,6 +37,9 @@ class BlogpostsController < ApplicationController
     end
   end
 
+  def edit
+  end
+
   # PATCH/PUT /blogposts/1
   # PATCH/PUT /blogposts/1.json
   def update
@@ -63,7 +66,7 @@ class BlogpostsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_blogpost
+    def find_blogpost
       @blogpost = Blogpost.find(params[:id])
     end
 

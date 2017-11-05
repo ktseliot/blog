@@ -20,3 +20,9 @@ textarea {
 .center h1 {
   margin-bottom: 10px;
 }
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+}
