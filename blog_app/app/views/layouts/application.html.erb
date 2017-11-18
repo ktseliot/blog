@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BlogApp</title>
+  <%= stylesheet_link_tag    "application", "data-turbolinks-track" => 'reload' %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => 'reload' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <%= link_to "BlogApp", '#', id: "logo" %>
+      <nav>
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "Home",   '#' %></li>
+          <li><%= link_to "Log in", 'sessions#new' %></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<div class="container">
+
+<%= yield %>
+
+</body>
+</html>
